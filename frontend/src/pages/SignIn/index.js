@@ -25,6 +25,8 @@ const Page = () =>{
             doLogin(json.token, rememberPassword)
             window.location.href = '/'
         }
+        
+        setDisabled(false)
     }
 
     return(
