@@ -29,6 +29,10 @@ export const SearchArea = styled.div`
             input{
                 flex:1;
                 padding: 0 10px;
+
+                &:focus{
+                    border: 1px solid #ddd
+                }
             }
 
             select: {
@@ -49,6 +53,32 @@ export const SearchArea = styled.div`
                 &:hover{
                     box-shadow: 2px 2px 8px #46ff;
                 }
+            }
+        }
+    }
+
+    .categoryList{
+        display:flex;
+        flex-wrap:wrape;
+        margin-top:20px;
+
+        .categoryItem{
+            width: 25%;
+            display:flex;
+            align-items:center;
+            color:#000;
+            text-decoration:none;
+            height:50px;
+            margin-bottom:10px;
+            
+            &:hover{
+                color: #999;
+            }
+
+            img{
+                width:45px;
+                height:45px;
+                margin-right:10px
             }
         }
     }
