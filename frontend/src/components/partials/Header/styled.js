@@ -23,13 +23,15 @@ a {
 
     .logo-1,
     .logo-2,
-    .logo-3 {
+    .logo-3,
+    .logo-4 {
         font-size:27px;
         font-weight:bold;
     }
     .logo-1 { color:#FF0000; }
     .logo-2 { color:#00FF00; }
     .logo-3 { color:#0000FF; }
+    .logo-4 { color:#ff3; }
 }
 
 nav {
