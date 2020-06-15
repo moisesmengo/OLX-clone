@@ -1,14 +1,14 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import './style.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Page = () => {
-    return(
-        <div className="not-found">
+    return (
+        <div>
             <h1>Página não encontrada</h1>
-            <Link to="/">Voltar parra a Home</Link>
+
+            <Link to="/">Voltar para a HOME</Link>
         </div>
-    )
+    );
 }
 
-export default Page
+export default Page;
