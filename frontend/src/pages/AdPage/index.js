@@ -74,10 +74,27 @@ const Page = () => {
                 <div className="rightSide">
                     <div className="box box--padding">
                         {loading && <Fake height={20} />}
+                        {adInfo.priceNegotiable &&
+                            "Preço Negociávvel"
+                        }
+                        {!adInfo.priceNegotiable && adInfo.price &&
+                            <div className="price">
+                                Preço: <span>R$ {adInfo.price}</span>
+                            </div>
+                        }
                     </div>
-                    <div className="box box--padding">
-                        {loading && <Fake height={50} />}
-                    </div>
+                    {loading && <Fake height={50} />}
+                    {adInfo.userInfo && 
+                        <>
+                            <a href={`mailto:${adInfo.userInfo.email}`} className="contactSellerLink" target="_blank">Contate o vendedor</a>
+                            <div className="box box--padding createdBy">
+                                <strong> {adInfo.userInfo.email} </strong>
+                                <small>E-mail: {adInfo.userInfo.email} </small>
+                                <small>Estado: {adInfo.stateName} </small>
+                            </div>
+                        </>
+                    }
+                    
                 </div>
             </PageArea>
         </PageContainer>
