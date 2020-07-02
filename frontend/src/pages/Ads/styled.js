@@ -89,6 +89,15 @@ export const PageArea = styled.div`
                 justify-content:center;
                 font-size:14px;
                 margin-right:5px;
+                cursor:pointer;
+
+                &:hover{
+                    border: solid 1px #557799
+                }
+
+                &.active{
+                    background-color:#ccc;
+                }
             }
         }
     }
